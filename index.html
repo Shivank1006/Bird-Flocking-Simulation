@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Boids</title>
+  <link rel='shortcut icon' href='images/favicon.ico' type='image/x-icon' />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="p5.js"></script>
+  <script src="sketch.js"></script>
+  <script src="boid.js"></script>
+</head>
+<body>
+  <div>
+    <h1 align="center">Boids Algorithm</h2>
+    <p align="center"><i>Simulating the flocking behaviour of birds</i></p>
+  </div>
+  <div id="canvas" align="center"></div>
+  <div align="center" style="width:100%; margin:auto; overflow:auto;">
+    <div id="slider1" style="float:left; padding-left:350px; padding-right:150px;"><p><b>Alignment: </b></p></div>
+    <div id="slider2" style="float:left; padding-right:150px;"><p><b>Cohesion: </b></p></div>
+    <div id="slider3" style="float:left;"><p><b>Separation: </b></p></div>
+  </div>   
+  <br>
+  <div style="width:60%; margin:auto; background-color:#d6d6d6; padding:10px;"> 
+    <h2>What are boids?</h2>
+    <p>Boids is an algorithm developed by Craig Reynolds in 1986 and is used to simulate the flocking behaviour of birds.</p>
+    <p>The complexity in the movement of boids arises due to the interaction of each boid with other nearby boids on the basis of set of simple rules. The rules applied are:</p>
+    <table align="center" border="0" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td> <img src="images/separation.gif" alt="separation diagram"
+ height="145" width="217"> </td>
+      <td width="10"> <br>
+      </td>
+      <td width="150"> <b>Separation</b>: steer to avoid crowding
+local flockmates </td>
+    </tr>
+    <tr>
+      <td> <img src="images/alignment.gif" alt="alignment diagram"
+ height="145" width="217"> </td>
+      <td width="10"> <br>
+      </td>
+      <td width="150"> <b>Alignment</b>: steer towards the average
+heading of local flockmates </td>
+    </tr>
+    <tr>
+      <td> <img src="images/cohesion.gif" alt="cohesion diagram"
+ height="145" width="217"> </td>
+      <td width="10"> <br>
+      </td>
+      <td width="150"> <b>Cohesion</b>: steer to move toward the
+average position of local flockmates </td>
+    </tr>
+  </tbody>
+</table>
+  <p>However some other set of rules can also be applied to each boid like avoiding obstacles or goal seeking.<br>This algorithm was even used in movie <i><b>Batman Returns (1992) </b></i>to generate bat swarms.</p>
+
+  <p><a href="">[Github Repo]</a></p>
+  </div>
+</body>
+</html>
