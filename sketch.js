@@ -8,7 +8,7 @@ const flock = [];
 let canvas, alignSlider, cohesionSlider, separationSlider;
 
 function setup(){
-	canvas = createCanvas(windowWidth * 0.8, windowHeight * 0.8);
+	canvas = createCanvas(windowWidth * 0.8, 700);
 	canvas.parent('#canvas');
 
 	alignSlider = createSlider(0, 3, 1, 0.1);
